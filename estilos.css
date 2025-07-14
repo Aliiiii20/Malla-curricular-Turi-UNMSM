@@ -1,2 +1,46 @@
-# Malla-curricular-Turi-UNMSM
-Mis cursos para Turi
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e7f9f9;
+  color: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #008b8b;
+}
+
+#malla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.curso {
+  background-color: #b2dfdb;
+  border: 2px solid #009688;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.curso:hover {
+  background-color: #80cbc4;
+}
+
+.curso.bloqueado {
+  background-color: #ddd;
+  border-color: #aaa;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.curso.aprobado {
+  background-color: #4db6ac;
+  color: white;
+  border-color: #00796b;
+}
